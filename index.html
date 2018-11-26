@@ -1,93 +1,94 @@
 <!DOCTYPE html>
 <html>
-
-<head>
 <link rel="stylesheet"type="text/css"href="css/style.css">
-</head>
-<body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  * {box-sizing: border-box}
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial;}
+  /* Set height of body and the document to 100% */
+  body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial;
+  }
 
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #clear;
-    background-color: #clear;
-}
+  /* Style tab links */
+  .tablink {
+      background-color: #555;
+      color: white;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      font-size: 17px;
+      width: 25%;
+  }
 
-/* Style the buttons inside the tab */
-.tab button {
-    background-color: #none;
-    float: left;
-    border: #none;
-    outline: #none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-}
+  .tablink:hover {
+      background-color: #777;
+  }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #clear;
-}
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+      color: white;
+      display: none;
+      padding: 100px 20px;
+      height: 100%;
+  }
 
-/* Create an active/current tablink class */
-.tab button.active {
-    background-color: #clear;
-}
+  #Home {background-color: red;}
+  #News {background-color: green;}
+  #Contact {background-color: blue;}
+  #About {background-color: orange;}
+  </style>
+  </head>
+  <body>
 
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #clear;
-    border-top: none;
-}
-</style>
-</head>
-<body>
+  <button class="tablink" onclick="openPage('Services', this, 'red')">Services</button>
+  <button class="tablink" onclick="openPage('Why Farm to Fork', this, 'green')" id="defaultOpen">Why Farm to Fork</button>
+  <button class="tablink" onclick="openPage('About Us', this, 'blue')">About Us</button>
+  <button class="tablink" onclick="openPage('Contact', this, 'orange')">Contact</button>
 
-<h2 style="color: white;">Farm to Fork</h2>
+  <div id="Services" class="tabcontent">
+    <h3>Services</h3>
+    <p>Subscription based meals</p>
+  </div>
 
-<div class="tab">
-  <button class="tablinks" onclick="Menu(option, 'Services')">Services</button>
-  <button class="tablinks" onclick="Menu(option, 'Why Farm to Fork')">Why Farm to Fork</button>
-  <button class="tablinks" onclick="Menu(option, 'About Us')">About Us</button>
-</div>
+  <div id="Why Farm to Fork" class="tabcontent">
+    <h3>Why Farm to Fork</h3>
+    <p>Farm to Fork offers healthy and fresh meals directly to your office. We ensure our food is prepared with the best ingredients supplied by local farmers, promoting a safer food supply and reducing carbon footprint.</p>
+  </div>
 
-<div id="Services" class="tabcontent">
-  <h3>Services</h3>
-  <p>Subscription based meals</p>
-</div>
+  <div id="About Us" class="tabcontent">
+    <h3>Who are we?</h3>
+    <p>Farm to Fork was established in 2018 by two females aspiring to represent more women in the tech sector. Despite the fact that they only knew a small amount of coding, they were still able to create this masterpiece.</p>
+  </div>
 
-<div id="Why Farm to Fork" class="tabcontent">
-  <h3>Why Farm to Fork</h3>
-  <p>Farm to Fork offers healthy and fresh meals directly to your office. We ensure our food is prepared with the best ingredients supplied by local farmers, promoting a safer food supply and reducing carbon footprint. </p>
-</div>
+  <div id="Contact" class="tabcontent">
+    <h3>Contact</h3>
+    <p>Contact us now </p>
+  </div>
 
-<div id="About Us" class="tabcontent">
-  <h3>About Us</h3>
-  <p>Farm to Fork was established in 2018 by two females aspiring to represent more women in the tech sector. Despite the fact that they only knew a small amount of coding, they were still able to create this masterpiece.  </p>
-</div>
+  <script>
+  function openPage(pageName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
 
-<script>
-function Menu(Option, Services) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-</script>
+  }
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
 
 <input type="text" name="search" placeholder="Search..">
 
