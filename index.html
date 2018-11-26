@@ -46,10 +46,32 @@
   </head>
   <body>
 
+  <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
   <button class="tablink" onclick="openPage('Services', this, 'red')">Services</button>
   <button class="tablink" onclick="openPage('Why Farm to Fork', this, 'green')" id="defaultOpen">Why Farm to Fork</button>
   <button class="tablink" onclick="openPage('About Us', this, 'blue')">About Us</button>
   <button class="tablink" onclick="openPage('Contact', this, 'orange')">Contact</button>
+
+  <div id="Home" class="tabcontent">
+    <h3>Sign up now!</h3>
+    <h3> Sign up now! </h3>
+    <form>
+      <div class="form-group">
+        <label for="inputsm">Name</label>
+        <input class="form-control input-sm" id="inputsm" type="text">
+      </div>
+       <div class="form-group">
+        <label for="inputdefault">Address</label>
+        <input class="form-control" id="inputdefault" type="text">
+      </div>
+      <div class="form-group">
+        <label for="inputlg">Email</label>
+        <input class="form-control input-lg" id="inputlg" type="text">
+      </div>
+      <button type="button" class="btn btn-primary btn-md">Enter</button>
+    </form>
+
+  </div>
 
   <div id="Services" class="tabcontent">
     <h3>Services</h3>
@@ -91,23 +113,6 @@
   </script>
 
 <input type="text" name="search" placeholder="Search..">
-
-<h3> Sign up now! </h3>
-<form>
-  <div class="form-group">
-    <label for="inputsm">Name</label>
-    <input class="form-control input-sm" id="inputsm" type="text">
-  </div>
-   <div class="form-group">
-    <label for="inputdefault">Address</label>
-    <input class="form-control" id="inputdefault" type="text">
-  </div>
-  <div class="form-group">
-    <label for="inputlg">Email</label>
-    <input class="form-control input-lg" id="inputlg" type="text">
-  </div>
-  <button type="button" class="btn btn-primary btn-md">Enter</button>
-</form>
 
 </body>
 </html>
