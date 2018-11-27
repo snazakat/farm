@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet"type="text/css"href="css/style.css">
-<link rel="stylesheet"type="text/css"href="bootstrap-theme.css">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Farm to Fork </title>
+  <link href='css/bootstrap.css' rel='stylesheet'>
+  <link rel="stylesheet"type="text/css"href="css/style.css">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
   <style>
+  </head>
   * {box-sizing: border-box}
 
   /* Set height of body and the document to 100% */
@@ -43,9 +45,9 @@
   </head>
   <body>
 
-  <button class="tablink" onclick="openPage('Home', this, 'yellow')">Home</button>
+  <button class="tablink" onclick="openPage('Home', this, 'yellow')"id="defaultOpen">Home</button>
   <button class="tablink" onclick="openPage('Services', this, 'red')">Services</button>
-  <button class="tablink" onclick="openPage('Why Farm to Fork', this, 'green')" id="defaultOpen">Why Farm to Fork</button>
+  <button class="tablink" onclick="openPage('Why Farm to Fork', this, 'green')" >Why Farm to Fork</button>
   <button class="tablink" onclick="openPage('About Us', this, 'blue')">About Us</button>
 
   <div id="Home" class="tabcontent">
@@ -117,7 +119,8 @@ a {
 </style>
 </head>
 <body>
-
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
   <form action="/action_page.php">
     <div class="container">
       <h1>Register</h1>
@@ -136,6 +139,7 @@ a {
       <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
       <button type="submit" class="registerbtn">Register</button>
+    </div>
     </div>
 
     <div class="container signin">
