@@ -1,5 +1,71 @@
-<!DOCTYPE html>
 <html>
+<<<<<<< HEAD
+        <head>
+<title>$ClzId</title>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='icon' href='$SquareLogoSrc'>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js"
+type="text/javascript"></script>
+
+<style type="text/css">
+@import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
+
+#feedControl {
+margin-top : 10px;
+margin-left: auto;
+margin-right: auto;
+width : 440px;
+font-size: 12px;
+color: #9CADD0;
+}
+</style>
+<script type="text/javascript">
+function load() {
+var feed ="http://feeds.bbci.co.uk/news/world/rss.xml";
+new GFdynamicFeedControl(feed, "feedControl");
+
+}
+google.load("feeds", "1");
+google.setOnLoadCallback(load);
+</script>
+<style>
+    a:link {color: blue;}
+a:visited {color: navy;}
+a:hover {color: navy;}
+a:active {color: red;}
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Lato', sans-serif}
+.w3-bar,h1,button {font-family: 'Montserrat', sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+}
+</style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class='w3-top'>
+        <div id='navbar' class='w3-bar w3-Blue w3-card w3-left-align w3-large'>
+
+            <a class='w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue'
+                href='javascript:void(0);' onclick='myFunction()' title='Toggle Navigation Menu'><i class='fa fa-bars'></i></a>
+            <a style='color:white' href='#' class='w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white'>Top</a>
+            <a style='color:white' href='#GetStarted' class='w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white'>$SubscriptionService</a>
+            <a style='color:white' href='#Tagging' class='w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white'>Tagging</a>
+            <a style='color:white' href='#GuardRails' class='w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white'>Guard
+                Rails</a>
+            <a style='color:white' href='#Support' class='w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white'>Help</a>
+
+        </div>
+=======
 <head>
   <title> Farm to Fork </title>
   <link href='css/bootstrap.css' rel='stylesheet'>
@@ -53,74 +119,10 @@
   <div id="Home" class="tabcontent">
     <h3>Sign up now!</h3>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-}
 
-* {
-    box-sizing: border-box;
-}
-
-/* Add padding to containers */
-.container {
-    padding: 6px;
-    background-color: white;
-}
-
-/* Full-width input fields */
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-}
-
-input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-}
-
-/* Overwrite default styles of hr */
-hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
-}
-
-/* Set a style for the submit button */
-.registerbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 40%;
-    opacity: 0.9;
-}
-
-.registerbtn:hover {
-    opacity: 1;
-}
-
-/* Add a blue text color to links */
-a {
-    color: dodgerblue;
-}
-
-/* Set a grey background color and center the text of the "sign in" section */
-.signin {
-    background-color: #f1f1f1;
-    text-align: center;
-}
-</style>
 </head>
 <body>
-  <div class="row">
-    <div class="col-xs-6 col-md-4">
+  <div class="div1">
   <form action="/action_page.php">
     <div class="container">
       <h1>Register</h1>
@@ -136,64 +138,101 @@ a {
       <label for="psw-repeat"><b>Repeat Password</b></label>
       <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
       <hr>
-      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+      <p font="black">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
       <button type="submit" class="registerbtn">Register</button>
     </div>
+  </div>
     </div>
 
     <div class="container signin">
       <p>Already have an account? <a href="#">Sign in</a>.</p>
+>>>>>>> 4cf545d51d3956c63f88585fa945df1b43b9b13e
     </div>
-  </form>
+    <!-- Header -->
+    <header class='w3-container w3-blue w3-center' style='padding:128px 16px'>
+        <h1 class='w3-margin w3-jumbo'>Farm to Fork</h1>
+        <p class='w3-xlarge'>Sub-heading?</p>
+
+    </header>
+
+                <br /><br />
+                <table class='w3-table w3-striped w3-bordered' style='width:95%'>
+                    <tr>
+                        <td>
+                            <p><strong>About Us</strong></p>
+                            <p> We are two young women working together to bring food fresh from the farm to your fork.</p>
+<p>Farm to Fork was established in 2018 by two females aspiring to represent more women in the tech sector. Despite the fact they only knew a little bit about coding, they were still able to create this masterpiece.</p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3> Sign up now! </h3>
+<form>
+  <div class="form-group">
+    <label for="inputsm">Name</label>
+    <input class="form-control input-sm" id="inputsm" type="text">
   </div>
-
-  <div id="Services" class="tabcontent">
-    <h3>Services</h3>
-    <p>Subscription based meals</p>
+   <div class="form-group">
+    <label for="inputdefault">Address</label>
+    <input class="form-control" id="inputdefault" type="text">
   </div>
-
-  <div id="Why Farm to Fork" class="tabcontent">
-    <h3>Why Farm to Fork</h3>
-    <div class="container">
-  <div class="row">
-    <div class=".col-sm-4"></div>
-    <p>Farm to Fork offers healthy and fresh meals directly to your office. We ensure our food is prepared with the best ingredients supplied by local farmers, promoting a safer food supply and reducing carbon footprint.</p>
+  <div class="form-group">
+    <label for="inputlg">Email</label>
+    <input class="form-control input-lg" id="inputlg" type="text">
   </div>
-
-  <div id="About Us" class="tabcontent">
-    <h3>Who are we?</h3>
-    <p>Farm to Fork was established in 2018 by two females aspiring to represent more women in the tech sector. Despite the fact that they only knew a small amount of coding, they were still able to create this masterpiece.</p>
-    <div class="w3-xlarge w3-padding-32">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-     </div>
-    
-  </div>
-
-  <script>
-  function openPage(pageName,elmnt,color) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablink");
-      for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].style.backgroundColor = "";
-      }
-      document.getElementById(pageName).style.display = "block";
-      elmnt.style.backgroundColor = color;
-
-  }
-  document.getElementById("defaultOpen").click();
-  </script>
-
-<input type="text" name="search" placeholder="Search..">
-
-</body>
-</html>
+</form>
+                        </td>
+                        <td>
+                            <p> We have several different delivery options:</p>
+                            <ul>
+                                <li>Sign up for a whole month of lunches with our best value plan</li>
+                                <li>Sign up for one week of lunches to see if Farm to Fork is for you</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><strong>Choose your cuisine</strong></p>
+                        </td>
+                        <td>
+                            <strong>We offer a range of delicious cuisines from all around the world:</strong></p>
+                            <ul>
+                                <li>Italian</li>
+                                <li>Chinese</li>
+                                <li>Japanese</li>
+                                <li>French</li>
+                                <li>Vietnamese</li>
+                                <li>Greek</li>
+                                <li>Indian</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><strong>Choose your size</strong></p>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Large</li>
+                            <li>Medium</li>
+                            <li>Small</li>
+                        </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById('navbar').style.top = '0';
+            } else {
+                document.getElementById('navbar').style.top = '-50px';
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
